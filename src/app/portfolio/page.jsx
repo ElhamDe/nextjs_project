@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import styles from './page.module.css';
 
 const Portfolio = () => {
   return (
-    <div>index</div>
+    <div className={styles.container}>index</div>
   )
 }
 

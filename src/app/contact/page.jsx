@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import styles from './page.module.css';
 
-const Contact = () => {
+const container = () => {
   return (
-    <div>index</div>
+    <div className={styles.container}>container</div>
   )
 }
 
-export default Contact;
+export default container;
