@@ -1,9 +1,10 @@
 import mongoose from "mongoose";
 
-const {Schema} = mongoose;
+const { Schema } = mongoose;
 
-  const postSchema = new Schema({
-    title:{
+const postSchema = new Schema(
+  {
+    title: {
       type: String,
       required: true,
     },
@@ -27,4 +28,5 @@ const {Schema} = mongoose;
   { timestamps: true }
 );
 
-export default mongoose.model("Post", userSchema);
+//If the Post collection does not exist create a new one.
+export default mongoose.model("Post", postSchema);
